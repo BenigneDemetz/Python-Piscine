@@ -3,13 +3,28 @@
   
 ## What am I learning new ?
 
+
+#### Tuples
 Tuples are const (change to list to modify)  
+
+#### Sets
 Sets don't care about order. The order is never preserved and can change  
-For flaots, "\<var>:,f" allows to add ',' to big numbers (4242 -> 4,242) and "\<var>:.xf" add x decimals (\<42>:.2f -> 42.21) (",.xf" combined)  
----".e" instead of ".f" after a float set it to scientific notation  
 
+#### Floats
+"\<var>:,f" allows to add ',' to big numbers (4242 -> 4,242) and "\<var>:.xf" add x decimals (\<42>:.2f -> 42.21) (",.xf" combined)  
+":e" instead of ":f" after a float set it to scientific notation  
+":.xe" set x nb after comma for decimal  
 
-## Data structures
+#### Isinstance
+We can think "type(\<var>) == type" is best way to check the type but no.
+Isinstance check the type of the object but also parents's classes
+type() will return the value of the current type without giving attention to parents
+ex. isinstance(my_animal, Dog) True
+ex. isinstance(my_animal, Animal) True
+ex. type(my_animal) == Dog True
+ex. type(my_animal) == Animal False
+
+# Data sturctures methods
 
 ### List methods
 | Method | Description |
