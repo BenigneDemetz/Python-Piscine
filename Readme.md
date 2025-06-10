@@ -6,7 +6,7 @@
 Tuples are const (change to list to modify)  
 Sets don't care about order. The order is never preserved and can change  
 For flaots, "\<var>:,f" allows to add ',' to big numbers (4242 -> 4,242) and "\<var>:.xf" add x decimals (\<42>:.2f -> 42.21) (",.xf" combined)  
-    .e instead of .f after a float set to scientific display  
+---".e" instead of ".f" after a float set it to scientific notation  
 
 
 ## Data structures
