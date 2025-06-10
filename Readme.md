@@ -59,6 +59,6 @@ setdefault()	Returns the value of the specified key. If the key does not exist: 
 update()	Updates the dictionary with the specified key-value pairs  
 values()	Returns a list of all the values in the dictionary
 
-| L0   | **bold** | $1600 |
-| L1   |  `code`  |   $12 |
-| L2   | _italic_ |    $1 |
+| L0   | **bold** | $1600 |  
+| L1   |  `code`  |   $12 |  
+| L2   | _italic_ |    $1 |  
