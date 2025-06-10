@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def all_thing_is_obj(object: any) -> int:
     if isinstance(object, str):
         print(f"{object} is in the kitchen : {type(object)}")
