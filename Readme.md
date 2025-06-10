@@ -1,6 +1,13 @@
 # Python Piscine  
   
   
+## What am I learning new ?
+
+Tuples are const (change to list to modify)
+Sets don't care about order. The order is never preserved and can change
+
+
+
 ## List methods
 | Method | Description |
 |:-------|:------------|
@@ -38,7 +45,7 @@
 | | < | Returns whether all items in this set is present in other, specified set(s) |
 | issuperset() | >= | Returns whether this set contains another set or not |
 | | > | Returns whether all items in other, specified set(s) is present in this set |
-| pop() | | Removes an element from the set |
+| pop() | | Removes an element from the set (random) |
 | remove() | | Removes the specified element |
 | symmetric_difference() | ^ | Returns a set with the symmetric differences of two sets |
 | symmetric_difference_update() | ^= | Inserts the symmetric differences from this set and another |
