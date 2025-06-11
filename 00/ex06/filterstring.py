@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
 
-import sys
 from benigne.get_args import get_args
 from benigne.ft_filter import ft_filter
 

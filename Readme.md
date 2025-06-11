@@ -26,10 +26,12 @@ ex. type(my_animal) == Animal False
 
 #### List comprehension  
 create a list with a loop on one line  
+
 [item for item in iterable if item]  
+
 items = []  
 for item in iterable:  
-    items.append(item)  
+  items.append(item)  
 
 #### Lambda  
 lambda allows to create "function"  
