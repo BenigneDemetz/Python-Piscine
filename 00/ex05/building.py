@@ -68,6 +68,7 @@ def main():
     print(f"{count_spaces(string)} spaces")
     print(f"{count_digits(string)} digits")
 
+
 if __name__ == "__main__":
     # main()
     print(count_characters.__doc__)

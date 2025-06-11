@@ -24,6 +24,19 @@ ex. isinstance(my_animal, Animal) True
 ex. type(my_animal) == Dog True  
 ex. type(my_animal) == Animal False  
 
+#### List comprehension  
+create a list with a loop on one line  
+[item for item in iterable if item]  
+items = []  
+for item in iterable:  
+    items.append(item)  
+
+#### Lambda  
+lambda allows to create "function"  
+lambda arguments : expression  
+func = lambda x: x*2  
+print(func(2)) #4  
+
 # Data sturctures methods
 
 ### List methods

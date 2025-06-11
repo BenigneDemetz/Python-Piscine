@@ -12,11 +12,8 @@ def main():
         print("AssertionError: the arguments are bad")
         sys.exit(1)
     words = args[0].split(' ')
-    value = lambda W: len(W) >= int(args[1])
-    print(list(ft_filter(value, words)))
-    
+    print(list(ft_filter(lambda W: len(W) >= int(args[1]), words)))
+
 
 if __name__ == "__main__":
     main()
-
-    
