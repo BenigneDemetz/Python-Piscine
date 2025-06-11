@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from benigne.get_args import get_args
 from benigne.ft_filter import ft_filter
 
 NESTED_MORSE = {
@@ -14,8 +13,17 @@ NESTED_MORSE = {
 }
 
 
+def get_args() -> list[str]:
+    import argparse
+    parser = argparse.ArgumentParser(description='Mon programme')
+    parser.add_argument('message', help='Message à convertir en morse')
+    args = parser.parse_args()
+    return [args.message]
+
+
 def main():
     args: list[str] = get_args()
+    print(args)
     if len(args) != 1 or not args[0].replace(" ", "").isalnum():
         print("AssertionError: the arguments are bad")
         return
@@ -25,3 +33,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
