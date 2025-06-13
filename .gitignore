@@ -1,2 +1,4 @@
 *__pycache__/
 tester.py
+venv/
+build_venv/

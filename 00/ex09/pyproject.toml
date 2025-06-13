@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling >= 1.14.1"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+authors = [
+  { name="bdemetz", email="bdemetz@student.42.fr" },
+]
+description = "Personnal features"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "MIT"}
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/BenigneDemetz"
