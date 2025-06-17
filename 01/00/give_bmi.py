@@ -21,8 +21,8 @@ def check_bmi_types(height: list[int | float], weight: list[int | float]) -> int
         if not isinstance(w, (int, float)):
             print("Weight must be a list of numbers.")
             return True
-        if w <= 0:
-            print("Weight must be greater than zero.")
+        if w < 0:
+            print("Weight must be positive.")
             return True
     return False
 
@@ -34,12 +34,10 @@ def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int |
     :param weight: List of weights in kilograms.
     :return: List of BMI values.
     """
-    
     if len(height) != len(weight):
-        print("Error: Height and weight lists must have the same length.")
+        print("Height and weight lists must be of the same length.")
         return None
     if check_bmi_types(height, weight):
-        print("Error: Height and weight must be lists of numbers.")
         return None
     return [w/(h ** 2) for h, w in zip(height, weight)]
 
