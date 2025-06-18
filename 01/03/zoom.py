@@ -16,7 +16,6 @@ def main() -> int:
     y_slicer = slice(y_start, y_start + y_target)
     array_zoomed = array_img[x_slicer, y_slicer]
     array_gray = array_zoomed.mean(axis=2, keepdims=True).astype('uint8')
-    #show the zoomed image
     print(array_gray)
     print(f"New shape after slicing: {array_gray.shape} or {array_gray.squeeze().shape}")
     return 0    
